@@ -1,0 +1,33 @@
+body {
+  background-color: black;
+}
+
+#xh {
+  position: relative;
+}
+
+.xue {
+  position: absolute;
+  display: inline-block;
+  /* opacity: .7; */
+  outline: none;
+  border: none;
+  animation: xuehua 5s infinite linear;
+}
+
+.xue:hover {
+  cursor: pointer;
+  animation-play-state: paused;
+  opacity: 1;
+}
+
+@keyframes xuehua {
+  from {
+    opacity: 1;
+    transform: translate(0, 0) rotate(0deg);
+  }
+  to {
+    opacity: 0;
+    transform: translate(0, 700px) rotateZ(720deg) rotateY(720deg) scale(1.5);
+  }
+}
